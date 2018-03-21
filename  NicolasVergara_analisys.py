@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pylab as plt
 import glob
 # se crea una función que retorne el valor de x para una distribución normal
 Filenames=glob.glob('*.txt')
@@ -18,5 +19,5 @@ def get_fit(filename):
     plt.savefig(S)
     print(Promedio,desviación**2)
 
-for i in range(len(Filenames))
+for i in range(len(Filenames)):
     get_fit(Filenames[i])
