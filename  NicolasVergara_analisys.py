@@ -13,7 +13,7 @@ def get_fit(filename):
     Promedio=np.sum(DistribuciónExperimental)/N
     desviación=np.sqrt(np.sum(DistribuciónExperimental-Promedio)**2/(N-1))
     HistFreq=normal_dist(DistribuciónExperimental,Promedio,desviación)
-    S=filename[:-3]+'.png'
+    S=filename[:-4]+'.png'
     plt.figure()
     plt.hist(DistribuciónExperimental,facecolor='teal', alpha=0.5)
     plt.savefig(S)
